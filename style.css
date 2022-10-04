@@ -1,0 +1,32 @@
+.titulo {
+  border: solid 2px;
+}
+.contenedor-card {
+  margin-top: 15px;
+  border: solid 2px;
+  /* height: 200px; */
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 8px;
+  justify-content: center;
+}
+
+.card {
+  height: 250px;
+  width: 180px;
+  border: solid 1px;
+  text-align: justify;
+  padding: 15px;  
+}
+.btn {
+  border: solid 2px;
+  height: 25px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 5px;
+  background-color: brown;
+}
