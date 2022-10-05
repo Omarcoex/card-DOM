@@ -1,5 +1,9 @@
 .titulo {
   border: solid 2px;
+  text-align: center;
+  color: wheat;
+  background-color: black;
+  border-radius: 10px 25px 0px 10px;
 }
 .contenedor-card {
   margin-top: 15px;
@@ -19,7 +23,8 @@
   width: 180px;
   border: solid 1px;
   text-align: justify;
-  padding: 15px;  
+  padding: 15px;
+  border-radius: 15px;
 }
 .btn {
   border: solid 2px;
@@ -29,4 +34,12 @@
   text-align: center;
   padding-top: 5px;
   background-color: brown;
+}
+.anadir {
+  margin: auto;
+  color: white;
+  background-color: brown;
+  font-size: 15px;
+  margin-top: 25px;
+  text-align: center;
 }

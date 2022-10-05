@@ -4,21 +4,25 @@ const card = document.getElementsByClassName("card");
 const anadir = document.getElementById("anadir");
 
 anadir.addEventListener("click", anadirTarjetas);
+let cont=0
+
+
 function anadirTarjetas() {
+  cont++
   let tarjeta = document.getElementById("contenedor-card");
   console.log(tarjeta);
   tarjeta.innerHTML += `<div class="card">
-    <div class="modelo" id="modelo">m</div>
+    <div class="modelo" id="modelo">Tarjeta N° ${cont}</div>
     <p>
       En muchas ocasiones nos interesará buscar elementos en un array para,
       o bien, encontrar el elemento y trabajar con él, o para saber la
       posición del elemento en el array.
     </p>
-    <div class="btn" id="btn-delete">Delete</div>
+    <div class="btn" id="btn-delete"  onclick="deletedCard(this)" >Delete</div>
 </div>`;
-function deletedCard() {
-    
 }
+function deletedCard(e) {
+  e.parentNode.parentNode.removeChild(e.parentNode);
 }
 
 // let elemento=document.getElementById('papa')
